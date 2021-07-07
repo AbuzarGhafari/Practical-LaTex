@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+\usepackage{commath}
+\usepackage{amsmath}
+\usepackage{geometry}
+
+\setlength\parindent{0pt}
+
+
+\begin{document}
+	
+	\begin{center}
+		\section*{WPG}
+		{\Large Practical \LaTeX\, Tutorial \# 22}
+	\end{center}	
+	\subsection*{Objectives}
+	\begin{itemize}
+		\item Aligned Formulas
+		\item Aligned Environment
+		\item Simple Alignment
+		\item Annotated Alignment
+		\item Annotated Alignment Integration Example
+	\end{itemize}
+	\hrule
+	\bigskip
+	
+	
+	\subsection*{Simple Alignment}
+	
+	\par Align environment with each equation numbered.
+	
+	
+	\begin{align}
+		x_1 - 2x_2 - x_3 + 3x_4 &= 0 \\
+		-2x_1 + 4x_2 + 5x_3 - 5x_4 &= 3 \\
+		3x_1 - 6x_2 -6x_3 + 8x_4 &= 2
+	\end{align}
+		
+	\par Align environment to hide equation numbers with the \textit{\textbackslash notag} command.
+	\begin{align}
+		x_1 - 2x_2 - x_3 + 3x_4 &= 0 \\
+		-2x_1 + 4x_2 + 5x_3 - 5x_4 &= 3 \notag\\
+		3x_1 - 6x_2 -6x_3 + 8x_4 &= 2 \notag
+	\end{align}
+	
+	\par Hidding all the equation numbers by \textit{align*} environment.
+	\begin{align*}
+		x_1 - 2x_2 - x_3 + 3x_4 &= 0 \\
+		-2x_1 + 4x_2 + 5x_3 - 5x_4 &= 3 \\
+		3x_1 - 6x_2 -6x_3 + 8x_4 &= 2 
+	\end{align*}
+	
+	
+	\subsection*{Annotated Alignment}
+	\begin{align*}
+		\lim_{x\to c}(x^3 + 4x^2 - 3) &= \lim_{x\to c}x^3 + \lim_{x\to c}4x^2 - \lim_{x\to c} 3  && \text{Sum and Difference Rules}\\
+			&= c^3 + 4c^2 - 2 && \text{Power and Multiple Rules}
+	\end{align*}
+	
+	\begin{align*}
+		\lim_{x\to c}(x^3 + 4x^2 - 3) &= \lim_{x\to c}x^3 + \lim_{x\to c}4x^2 - \lim_{x\to c} 3  && \text{Sum and Difference Rules}\\
+		&= c^3 + 4c^2 - 2 && \text{\parbox{3cm}{Power and Multiple Rules}}
+	\end{align*}
+
+
+	\subsection*{Annotated Alignment $\vert$ Integration Exmaple}
+	\begin{align*}
+		\int_{0}^{\pi/4} \frac{\dif x}{1-\sin{x}} &= \int_{0}^{\pi/4} \frac{1}{1-\sin{x}} \cdot \frac{1 + \sin{x}}{1 + sin{x}} \dif x && \text{\parbox{3cm}{Multiply and divide by conjugate.}} \\
+			&= \int_{0}^{\pi/4} \frac{1 + \sin{x}}{1- \sin^2{x}} \dif x && \text{Simplify.}\\
+			&= \int_{0}^{\pi/4} \frac{1 + \sin{x}}{\cos^2{x}} \dif x && 1 - \sin^2{x} = \cos^2{x} \\
+			&= \int_{0}^{\pi/4} (\sec^2{x} + \sec^2{x} \tan{x}) \dif x && \text{\parbox{2.8cm}{Use Table 8.1, Formulas 8 and 10}}\\
+			&= \left[ \tan{x} + \sec{x} \right]_{0}^{\pi/4} \\
+			&= ( 1 + \sqrt{2} - (0 + 1)) \\
+			&= \sqrt{2}.
+	\end{align*}
+	
+\end{document}
