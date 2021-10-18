@@ -1,0 +1,137 @@
+\documentclass{article}
+ 
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+
+\setlength\parindent{0pt}
+
+
+\begin{document}
+	
+	
+	\begin{center}
+		\section*{WPG}
+		{\Large Practical \LaTeX\, Tutorial \# 23}
+	\end{center}	
+	\subsection*{Objectives}
+	\begin{itemize}
+		\item Aligned Formulas
+		\item Cases Environment
+		\item Example
+	\end{itemize}
+	\hrule
+	\bigskip
+	
+	
+	
+	\section*{Cases Environment}
+	
+	$$
+	\vert x \vert = \begin{cases}
+			x, 			& \text{x $\ge 0$}\\
+			-x, 		& \text{x $< 0$}
+		\end{cases}
+	$$
+	
+	$$
+	f(x) = \begin{cases}
+			0, 				& \text{x $\le -1$}\\
+			\sqrt{1-x^2}, 	& \text{$-1 < $ x $< 1$}\\
+			x,				& \text{x $\ge 1$}
+		\end{cases}
+	$$
+	
+	
+	\begin{align*} 
+		\vert x \vert &= \begin{cases}
+			x, 			& \text{x $\ge 0$}\\
+			-x, 		& \text{x $< 0$}
+			\end{cases}\\	
+		f(x) &= \begin{cases}
+				0,		 		& \text{x $\le -1$}\\
+				\sqrt{1-x^2}, 	& \text{$-1 < $ x $< 1$}\\
+				x, 				& \text{x $\ge 1$}
+			\end{cases}  
+	\end{align*}
+	
+	
+
+	$$
+		\lim_{x\to 2-} f(x) = 6, \text{where} f(x) = \begin{cases}
+										x, 			& \text{$x>2$}\\
+										3x, 		& \text{$x \le 2$}
+									\end{cases}
+	$$
+	
+	
+	
+	
+	
+	
+	\begin{align*}
+	V_{ijk} = \begin{cases}
+		\dfrac{y_u +y_t}{2} - \dfrac{x_u+x_t}{2}, 			& \text{if $x_u < y_t$}\\[4ex]
+		\begin{multlined}
+			\dfrac{1}{C} \biggl[ \dfrac{x_u^3 - y_u^3}{6} + \dfrac{y_t^2 + x_u^2}{2} x_l + \left( x_u -y_t  \right)\dfrac{x_l^2}{2} \\
+			+ \dfrac{y_u^2 - x_u^2}{x} \left( x_u - x_l \right)  - \left( y_u - x_u  \right) \dfrac{x_u^2 -x_t^2}{2}  \biggr] 	
+		\end{multlined},  									& \text{if $x_u \in [y_t, y_u]$} \\[8ex]
+		\dfrac{1}{x_u - x_l} \left[ \dfrac{(y_u + y_t)^2}{6} - \dfrac{y_u  + y_t}{2} x_l + \dfrac{x_l^2}{2}  \right], 					& \text{otherwise}
+	\end{cases}
+	\end{align*}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%	\begin{align*}
+%		V_{ijk} = \begin{cases}
+%			\dfrac{y_u + y_t}{2} - \dfrac{x_u + x_t}{2}, 		& \text{if $x_u < y_t$} \\[4ex]
+%			\begin{multlined}
+%				\dfrac{1}{C} \biggl[ \dfrac{x_u^3 - y_t^3}{6} + \dfrac{y_t^2 + x_u^2}{2}x_l + \left(x_u - y_t\right) \dfrac{x_l^2}{2}\\
+%				 + \dfrac{y_u^2 - x_u^2}{2} \left( x_u - x_l \right) - \left( y_u - x_u \right) \dfrac{x_u^2 - x_t^2}{2}   \biggr]
+%			\end{multlined}, 									& \text{if $x_u \in [y_t, y_u]$} \\[8ex]
+%			\dfrac{1}{x_u - x_l}\left[ \dfrac{(y_u + y_t)^2}{6} - \dfrac{y_u + y_t}{2} x_l + \dfrac{x_l^2}{2} \right], 							& \text{otherwise}
+%		\end{cases}
+%	\end{align*}
+	
+	 
+
+	
+
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt, a4paper]{article}
+ 
+\usepackage[left=1in, right=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor,colortbl} 
+
+
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+\definecolor{cosmiclatte}{rgb}{1.0, 0.97, 0.91}
+
+\arrayrulecolor{burgundy}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+	
+	\vspace*{1cm}
+	\begin{center}
+		\section*{WPG}
+		{\Large Practical \LaTeX\, Tutorial \# 33}
+	\end{center}	 
+	 
+	\hrule
+	\bigskip 
+	
+	\begin{table}[h]
+			\centering
+			\begin{tabularx}{0.6\linewidth}{XX}
+				\hline
+				\rowcolor{cosmiclatte}
+				Property of $b^x$ & Property of $\log_bX$\\ \hline
+				$b^0=1$	 &  $\log_b 1 = 0$ \\  \hline
+				$b^1 = b$ &  $\log_b b = 1$ \\  \hline
+				Range is $(0, +\infty)$ &  Domain is $(0, +\infty)$ \\  \hline
+				Domain is $(-\infty, +\infty)$ & Range is $(-\infty, +\infty)$\\ \hline
+			\end{tabularx}
+		\caption{\parbox{7cm}{Correspondence between properties of
+			logarithmic and exponential functions}}
+	\end{table}
+ 	
+ 	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

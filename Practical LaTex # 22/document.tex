@@ -1,9 +1,9 @@
 \documentclass{article}
 
-\usepackage{lipsum}
 \usepackage{commath}
 \usepackage{amsmath}
 \usepackage{geometry}
+\usepackage{lipsum}
 
 \setlength\parindent{0pt}
 
@@ -26,10 +26,8 @@
 	\bigskip
 	
 	
-	\subsection*{Simple Alignment}
-	
+	\subsection*{Simple Alignment}	
 	\par Align environment with each equation numbered.
-	
 	
 	\begin{align}
 		x_1 - 2x_2 - x_3 + 3x_4 &= 0 \\
@@ -65,14 +63,43 @@
 
 
 	\subsection*{Annotated Alignment $\vert$ Integration Exmaple}
+
+
 	\begin{align*}
-		\int_{0}^{\pi/4} \frac{\dif x}{1-\sin{x}} &= \int_{0}^{\pi/4} \frac{1}{1-\sin{x}} \cdot \frac{1 + \sin{x}}{1 + sin{x}} \dif x && \text{\parbox{3cm}{Multiply and divide by conjugate.}} \\
-			&= \int_{0}^{\pi/4} \frac{1 + \sin{x}}{1- \sin^2{x}} \dif x && \text{Simplify.}\\
-			&= \int_{0}^{\pi/4} \frac{1 + \sin{x}}{\cos^2{x}} \dif x && 1 - \sin^2{x} = \cos^2{x} \\
-			&= \int_{0}^{\pi/4} (\sec^2{x} + \sec^2{x} \tan{x}) \dif x && \text{\parbox{2.8cm}{Use Table 8.1, Formulas 8 and 10}}\\
-			&= \left[ \tan{x} + \sec{x} \right]_{0}^{\pi/4} \\
-			&= ( 1 + \sqrt{2} - (0 + 1)) \\
-			&= \sqrt{2}.
+		\int_{0}^{\pi/4} \frac{\dif x}{1-\sin{x}} &= \int_{0}^{\pi/4} \frac{1}{1-\sin{x}} \cdot \frac{1+\sin{x}}{1+\sin{x}} \dif x && \text{\parbox{3cm}{Multiply and divide by conjugate.}} \\
+		&= \int_{0}^{\pi/4} \frac{1+\sin{x}}{1-\sin^{x}} \dif x && \text{Simplify.} \\
+		&= \inf_{0}^{\pi/4} \frac{1+\sin{x}}{\cos^2{x}} \dif x && \text{\parbox{3cm}{$1-\sin^2{x} = \cos^2{x}$}} \\
+		&= \int_{0}^{\pi/4} \left[ \sec^2{x} + \sec^2{x} \tan{x}  \right] \dif x && \text{\parbox{3cm}{Use Table 8.1, Formulas 8 and 10}} \\
+		&= (\tan{x} + \sec{x})_0^{\pi/4} \\
+		&= (1 + \sqrt{2} - (0+1)) \\
+		&= \sqrt{2}.
 	\end{align*}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 \end{document}
